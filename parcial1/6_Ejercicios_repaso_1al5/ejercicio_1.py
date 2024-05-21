@@ -4,11 +4,7 @@
 #Poner un comentario para poner el tipo de dato
 # 
 
-pais = "Mexico"
-continente = "America"
+pais = "Mexico" #Tipo string
+continente = "America" #Tipo String
 
-print(pais)
-print(continente)
-
-print(type(pais))
-print(type(continente))
+print(f"Somos de {pais}, que es parte de {continente}")
