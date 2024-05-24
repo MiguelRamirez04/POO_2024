@@ -8,3 +8,5 @@ pais = "Mexico" #Tipo string
 continente = "America" #Tipo String
 
 print(f"Somos de {pais}, que es parte de {continente}")
+
+x=33
