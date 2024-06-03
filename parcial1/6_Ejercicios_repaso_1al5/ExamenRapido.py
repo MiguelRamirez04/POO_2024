@@ -1,40 +1,34 @@
-def captura():
-    lista_calificaciones_finales = []
-    NCap = 0
+calculos = 0
+Acceso = input("Quieres calcular tu IMC?(S/N)")
 
-    while True:
-        nombre = input("Introduzca el nombre del alumno: ")
-        carrera = input("Introduzca la carrera a la que pertenece: ")
-        p1 = float(input("Calificación del parcial 1: "))
-        p2 = float(input("Calificación del parcial 2: "))
-        p3 = float(input("Calificación del parcial 3: "))
-        promedio_parciales = (p1 + p2 + p3) / 3
-        proyectoF = float(input("Calificación del proyecto final: "))
+def calcular_imc(peso, altura):
+    return peso / (altura ** 2)
+    calculos += 1
+while True:
+    Acceso = input("Quieres calcular tu IMC?(S/N)")
+    if Acceso == "S":
+        peso = float(input("Introduce tu peso en kg: "))
+        altura = float(input("Introduce tu altura en metros (Ej. 1.75): "))
+        imc = calcular_imc(peso, altura)
 
-        final = (promedio_parciales + proyectoF) / 2
-        print(f"\nNombre: {nombre}")
-        print(f"Carrera: {carrera}")
-        print(f"Promedio de los parciales: {promedio_parciales}")
-        print(f"Calificación del proyecto final: {proyectoF}")
-        print(f"Calificación final: {final}")
+        if imc < 18.5:
+            print(f"Tu IMC es: {imc}, estas bajo de peso")
 
-        if final < 80 or proyectoF < 50:
-            print("Presenta examen extraordinario")
-        else:
-            print("Aprobado")
+        elif imc >= 18.5 and imc <= 24.9:
+            print(f"Tu IMC es: {imc}, estas normal")
 
-        lista_calificaciones_finales.append(final)
-        NCap += 1
+        elif imc >= 25 and imc <= 29.9:
+            print(f"Tu IMC es: {imc}, estas con sobrepeso")
 
-        pregunta = input("¿Deseas capturar otra captura? (SI/NO): ")
-        if pregunta != 'SI':
-            break
+        elif imc >= 30:
+            print(f"Tu IMC es: {imc}, estas con obesidad")
 
-    if lista_calificaciones_finales:
-        promedio_general = sum(lista_calificaciones_finales) / NCap
-        print(f"\nPromedio general de las calificaciones finales: {promedio_general}")
+        print(f"El cálculo del IMC se ha realizado {calculos} vez/veces.")
+    elif Acceso == "N":
+        print("Gracias por usar el calculador de IMC.")
+        print(f"se han realizado {calculos} calculos.")
+        break
+    elif Acceso == "N" and calculos == 0:
+        print("No se han realizado calculos")
     else:
-        print("No se capturaron calificaciones.")
-
-if True:
-    captura()
+        print("Entrada no válida. Por favor, introduce 'S' para sí o 'N' para no.")
