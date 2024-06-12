@@ -4,9 +4,10 @@ def solicitarDatos():
 #    global n1,n2
    n1=int(input("Numero #1: "))
    n2=int(input("Numero #2: "))
+   n=int(input("Numero: "))
    return n1,n2
 
-def getCalculadora(num1,num2,operacion):
+def getCalculadora(num1,num2,num, operacion):
     if operacion=="1" or operacion=="+" or operacion=="SUMA":
         return f"{num1} + {num2} = {int(num1)+int(num2)}"
     elif operacion=="2" or operacion=="-" or operacion=="RESTA":
@@ -18,7 +19,7 @@ def getCalculadora(num1,num2,operacion):
     elif operacion=="5" or operacion=="**" or operacion=="POTENCIA":
         return f"{num1} ** {num2} = {int(num1)**int(num2)}"
     elif operacion=="6" or operacion=="%" or operacion=="Raiz":
-        return f"{num1} % {num2} = {math.sqrt(num1**2 + num2**2)}"    
+        return f"√{num} = {math.sqrt(num**2)}"    
     else:
         print("opcion invalida")
 
