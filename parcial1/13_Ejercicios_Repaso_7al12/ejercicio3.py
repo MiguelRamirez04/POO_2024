@@ -6,3 +6,4 @@ if len(lista) == 0:
         lista.append(palabra)
         if palabra == "FIN":
             break
+        

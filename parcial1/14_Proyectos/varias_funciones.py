@@ -60,3 +60,4 @@ def menu():
     print("\n\t..::: CINEPOLIS CLON :::... \n\t..::: SISTEMA GESTOR DE PELICULAS :::... \n\n1.- Agregar\n2.- Eliminar\n3.- Actualizar\n4.- Consultar\n5.- Buscar\n6.- Vaciar\n7.- Salir\n")
     opcion = int(input("\tElige una opcion: "))
     return opcion
+
