@@ -9,3 +9,4 @@ if num1 > num2:
 print(f"Números entre {num1} y {num2}: ")
 for i in range(num1 , num2 + 1):
     print(i)
+    

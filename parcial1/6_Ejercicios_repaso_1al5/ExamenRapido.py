@@ -32,3 +32,4 @@ while True:
         print("No se han realizado calculos")
     else:
         print("Entrada no válida. Por favor, introduce 'S' para sí o 'N' para no.")
+        

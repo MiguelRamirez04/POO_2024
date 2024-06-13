@@ -5,3 +5,4 @@ while num != 111:
     num = int(input("Introduce un número (111 para finalizar): "))
     if num == 111:
         print("Programa cerrado.")
+        

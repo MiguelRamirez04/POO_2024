@@ -11,3 +11,4 @@ while contador <= 60:
 for cont in range(1,61):
     cuadrado = cont*cont
     print(f"{cont} x {cont} = {cuadrado}")
+    
