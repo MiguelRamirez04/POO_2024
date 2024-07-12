@@ -1,7 +1,3 @@
-# Crea un programa que simule una clase llamada Figura donde haya 3 subclases llamadas rectangulo, circulo y triangulo
-# rectangulo: los atributos son largo y ancho, se le quiere calcular el area (incluir set y get)
-# circulo: su atributo es radio, se le quiere calcular el area (incluir set y get)
-# triangulo: sus atributos son altura y ancho, se le quiere calcular el area (incluir set y get)
 import math
 class Figura:
     def Calculo(self):
