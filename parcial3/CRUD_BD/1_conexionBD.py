@@ -4,7 +4,7 @@ conexion = mysql.connector.connect(
     host='localhost',
     user='root',
     password='',
-    database='bd_python'
+    database='BASEDATOS'
 )
 
 if conexion.is_connected():

@@ -6,7 +6,7 @@ try:
         host='localhost',
         user='root',
         password='',
-        database='bd_python'
+        database='BASEDATOS'
     )
 except Exception as e:
     print(type(e))

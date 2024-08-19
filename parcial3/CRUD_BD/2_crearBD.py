@@ -13,7 +13,7 @@ else:
     # Crear un objeto de tipo cursor que permita ejecutar instrucciones SQL
     micursor = conexion.cursor()
 
-    sql = "create database bd_python"
+    sql = "create database BASEDATOS"
     # Ejecutar la consulta sql
     micursor.execute(sql)
 
@@ -21,7 +21,7 @@ else:
         print("Se creó la bd exitosamente")
 
     # mostrar las BD que existen en el SGBD MySQL
-    micursor.execute("show database")
+    # micursor.execute("show database")
 
     for x in micursor:
         print(x)
